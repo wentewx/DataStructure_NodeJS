@@ -3,6 +3,10 @@
 // 使用 setTimeout，readline 套件 
 
 const readline = require('readline-sync');
+function sleep(n) {//sleep n miliseconds
+    Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, n);
+}
+
 
 var current_floor = 5; //電梯目前位於5樓
 var target_floor; //欲到達樓層 
@@ -25,7 +29,8 @@ do{ //無窮迴圈，迴圈內程式(6~37行)有break指令時可終止迴圈
         }else if (target_floor < current_floor){
             console.log('電梯下樓');
             while (target_floor < current_floor){ //迴圈當target_floor 大於或等於 current_floor時終止迴圈
-                console.log(current_floor); //暫停0.5秒
+                console.log(current_floor); 
+                sleep(1000)//暫停1秒
                 //將current_floor的值減1，下列2種寫法
                 //current_floor = current_floor - 1 
                 current_floor -= 1; 
@@ -34,7 +39,8 @@ do{ //無窮迴圈，迴圈內程式(6~37行)有break指令時可終止迴圈
         }else{
             console.log('電梯上樓');
             while (target_floor > current_floor){
-                console.log(current_floor); //暫停0.5秒
+                console.log(current_floor); 
+                sleep(1000)//暫停1秒
                 //將current_floor的值減1，下列2種寫法
                 //current_floor = current_floor - 1 
                 current_floor += 1;
