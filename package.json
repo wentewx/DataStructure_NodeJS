@@ -1,0 +1,21 @@
+{
+  "name": "datastructure_nodejs",
+  "version": "1.0.0",
+  "description": "Hello BMI",
+  "main": "Hello.js",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node Hello.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "NodeJS" 
+  ],
+  "author": "KFHWANG",
+  "license": "ISC"
+}
