@@ -8,13 +8,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node Hello.js"
-  },
-  "repository": {
-    "type": "git"
+    "test": "node hello.js 60.5 155.5"
   },
   "keywords": [
-    "NodeJS" 
+    "NodeJS"
   ],
   "author": "KFHWANG",
   "license": "ISC"

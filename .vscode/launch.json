@@ -12,7 +12,7 @@
                 "<node_internals>/**"
             ],
             "console": "integratedTerminal",
-            "program": "${workspaceFolder}/${relativeFile}"
+            "program": "${workspaceFolder}/Hello.js"
         }
     ]
 }
