@@ -12,7 +12,7 @@
                 "<node_internals>/**"
             ],
             "console": "integratedTerminal",
-            "program": "${workspaceFolder}/Elevator_V1.js"
+            "program": "${workspaceFolder}/${relativeFile}"
         }
     ]
 }
