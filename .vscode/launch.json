@@ -8,11 +8,8 @@
             "type": "node",
             "request": "launch",
             "name": "啟動程式",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "console": "integratedTerminal",
-            "program": "${workspaceFolder}/Hello.js"
+            "program": "${file}",
+            "console": "integratedTerminal"
         }
     ]
 }
