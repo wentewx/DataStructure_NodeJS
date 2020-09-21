@@ -5,3 +5,24 @@ var height=160;
 var bmi = weight/((height/100)**2);
 
 console.log("Hello! Your BMI value is "+ bmi);
+
+// 使用第三方套件 readline-sync (待使用者輸入資料後程式再繼續執行) 
+//NodeJS 套件管理程式為 npm，需打開終端機輸入指令
+//安裝 readline-sync 套件指令: npm install readline-sync
+//另可透過package.json指定所有相關套件後 npm install 即可安裝所有套件
+
+const readline = require('readline-sync');
+weight = readline.question('請輸入您的體重(kg)?');
+height = readline.question('請輸入您的身高(cm)?');  
+weight = Number(weight);
+height = Number(height);
+
+if(isNaN(weight) || isNaN(height))
+    console.log("輸入資料有誤!");
+else
+    console.log("Your BMI value is "+ BMI(weight, height));
+
+
+function BMI(w, h){
+    return Math.round(weight/((height/100)**2)*100)/100;
+}
