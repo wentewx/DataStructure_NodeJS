@@ -10,6 +10,13 @@
             "name": "啟動程式",
             "program": "${file}",
             "console": "integratedTerminal"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "外部終端機",
+            "program": "${file}",
+            "console": "externalTerminal"
         }
     ]
 }
