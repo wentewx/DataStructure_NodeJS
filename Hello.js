@@ -31,3 +31,4 @@ function BMI(w, h){
 }
 
 //not only bmi value, but also judgement
+//Ask user to input height only, is it workable?

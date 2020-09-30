@@ -22,9 +22,9 @@ if (min < 0) {
 
 do { //無窮迴圈，迴圈內程式(6~37行)有break指令時可終止迴圈
     if (current_floor > 0)
-        str_current = (current_floor)
+        str_current = (current_floor);
     else
-        str_current = "B" + (current_floor * -1 + 1) //轉為地下樓層名稱 current_floor=0 轉為 B1, -1 轉為 B2, -2轉為B3 
+        str_current = strFloor[current_floor*-1]; //轉為地下樓層名稱 current_floor=0 轉為 B1, -1 轉為 B2, -2轉為B3 
 
     //使用者輸入欲到達樓層 
     target_floor = readline.question('您現在在 ' + str_current + ' 樓。請問要去哪一樓？');
