@@ -16,19 +16,7 @@ console.log("Hello! Your BMI value is "+ bmi);
 const readline = require('readline-sync');
 weight = readline.question('請輸入您的體重(kg)?');
 height = readline.question('請輸入您的身高(cm)?');  
-weight = Number(weight);
-height = Number(height);
 
-if(isNaN(weight) || isNaN(height))
-    console.log("輸入資料有誤!");
-else if(weight<0 || weight>200 || height<0 || height>250)
-    console.log("輸入資料有誤!");
-else
-    console.log("Your BMI value is "+ BMI(weight, height));
-
-function BMI(w, h){
-    return Math.round(weight/((height/100)**2)*100)/100;
-}
 
 //not only bmi value, but also judgement
 //Ask user to input height only, is it workable?
