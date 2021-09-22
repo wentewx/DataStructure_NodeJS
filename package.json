@@ -1,17 +1,22 @@
 {
-  "name": "datastructure_nodejs",
+  "name": "exec",
   "version": "1.0.0",
-  "description": "Hello BMI",
+  "description": "多媒體設計系資料結構使用NodeJS(Javascript)\r 每週上課練習的程式將更新至此",
+  "main": "Hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wentewx/DataStructure_NodeJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wentewx/DataStructure_NodeJS/issues"
+  },
+  "homepage": "https://github.com/wentewx/DataStructure_NodeJS#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "node hello.js 60.5 155.5"
-  },
-  "keywords": [
-    "NodeJS"
-  ],
-  "author": "KFHWANG",
-  "license": "ISC"
+  }
 }
