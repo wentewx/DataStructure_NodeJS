@@ -5,7 +5,7 @@
 var weight=50.5;
 var height=160;
 var bmi = weight/((height/100)**2);
-
+  
 console.log("Hello! Your BMI value is "+ bmi);
 
 //使用第三方套件 readline-sync (待使用者輸入資料後程式再繼續執行) 
