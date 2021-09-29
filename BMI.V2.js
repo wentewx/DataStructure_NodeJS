@@ -2,7 +2,7 @@
 //JS PPT: https://drive.google.com/open?id=0BwN5VWV_C7-5ZnE3d045YWZJb00
 //Javascript 變數的使用
 
-var weight=50.5;
+
 var height=160;
 
 
@@ -14,17 +14,16 @@ var height=160;
 //另可透過package.json指定所有相關套件後 npm install 即可安裝所有套件
 
 const readline = require('readline-sync');
-weight = readline.question('請輸入您的體重(kg)?');
 height = readline.question('請輸入您的身高(cm)?');  
-weight = Number(weight)
 height = Number(height)
-if (isNaN(weight)|| weight<=0 || weight>631){
-    console.log("資料有誤!請輸入介於1~630之間的數字")
-}else if (isNaN(height) || height<=0 || height>240){
+
+ if (isNaN(height) || height<=0 || height>240){
     console.log("資料有誤!請輸入介於1~240之間的數字")
 }else {
-    var bmi = weight/((height/100)**2);
-    console.log("Hello! Your BMI value is "+ bmi);
+    height = (height/100);
+    var idealLow = 18.5*(height**2)
+    var idealHi = 24*height**2;
+    console.log("你的理想體重範圍為: "+ idealLow +"~"+   idealHi +"KG");
 }
 
 
